@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+let str = `Старший братец ПОНЕДЕЛЬНИК –
+работяга, не бездельник.
+Он неделю открывает
+всех трудиться зазывает.
+
+ВТОРНИК следует за братом
+у него идей богато.
+
+А потом СРЕДА-сестрица,
+не пристало ей лениться.
+
+Брат ЧЕТВЕРГ и так, и сяк,
+он мечтательный чудак.
+
+ПЯТНИЦА-сестра сумела
+побыстрей закончить дело.
+
+Предпоследний брат СУББОТА
+не выходит на работу.
+
+В гости ходит ВОСКРЕСЕНЬЕ,
+очень любит угощенье
+`;
+let str1 = str.replace(new RegExp("ПОНЕДЕЛЬНИК","g"), "MONDAY"); 
+let str2 = str1.replace(new RegExp("ВТОРНИК","g"), "TUESDAY"); 
+let str3 = str2.replace(new RegExp("СРЕДА","g"), "WEDNESDAY"); 
+let str4 = str3.replace(new RegExp("ЧЕТВЕРГ","g"), "THURSDAY"); 
+let str5 = str4.replace(new RegExp("ПЯТНИЦА","g"), "FRIDAY"); 
+let str6 = str5.replace(new RegExp("СУББОТА","g"), "SATURDAY"); 
+let str7 = str6.replace(new RegExp("ВОСКРЕСЕНЬЕ","g"), "SUNDAY"); 
+alert(str7);
+</script>
